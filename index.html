@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="João Vitor Silva dos Santos">
+    <meta name="description" content="Site de Auto Elétrica, carros, reparos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Elétrica MJ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/media-query.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="./img/miguel_eletrica_logo_completo.png" alt="" id="header-img">
+        </a>
+        <span class="material-symbols-outlined" id="header-icone">menu</span>
+        <menu id="header-menu">
+            <a href="">Home</a>
+            <a href="">Serviços</a>
+            <a href="">Localização</a>
+            <a href="">Contato</a>
+        </menu>
+    </header>
+    <main>
+        <article class="carrossel-container">
+            <section class="carrossel-slide" id="carrossel">
+                <section class="slide">
+                    <img src="./img/248-as-pricipais-manutencoes-no-sistema-eletrico-e-eletronico-do-carro-photoaidcom-darken-photoaidcom-darken.jpg" alt="">
+                    <h1 class="descricao"><span class="afinar-letra">Qualidade de</span> Manutenção</h1>
+                </section>
+                <section class="slide">
+                    <img src="./img/288-como-fazer-sua-oficina-mecanica-prosperar-photoaidcom-darken-photoaidcom-darken.jpg" alt="">
+                    <h1 class="descricao"><span class="afinar-letra">Equipe</span> Especializada</h1>
+                </section>
+                <section class="slide"> 
+                    <img src="./img/tradener-setor-mecanico-energia-photoaidcom-darken-photoaidcom-darken.jpg" alt="">
+                    <h1 class="descricao"><span class="afinar-letra">Diagnóstico</span> Preciso</h1>
+                </section>
+
+            </section>   
+
+            <button class="botao botao-esquerda" onclick="moverCarrossel(-1)">
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+            </button>
+            <button class="botao botao-direita" onclick="moverCarrossel(1)">
+                <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
+
+        </article>
+        <article class="sobre-container">
+            <section class="sobre-content">
+                <h2 class="afinar-letra">Um Pouco</h2>
+                <h1>Sobre Nós</h1>
+                <p>A Auto Elétrica MJ é o local ideal para você que tem algum problema elétrico ou necessidade com o seu automóvel. Estamos a 2 anos no mercado sendo referência na região sul de Santa Catarina, prestando serviços na parte elétrica como reparos e consertos de veículos. Nossos serviços são feitos por profissionais especializados e dispondo de uma estrutura perfeita para melhor lhe atender.</p>
+                <button>Leia Mais</button>
+            </section>
+        </article>
+        <article class="pecas-container">
+
+            <section class="pecas-intro">
+                <img id="pecas-imagem" src="./img/mecanico-carro.jpg" alt="">
+                <h2 class="afinar-letra">Peças Para</h2>
+                <h1>Seu Carro</h1>
+                <p>Com grande variedade de peças de reposição, revendemos e aplicamos as mais bem conceituadas marcas do mercado. Trabalhamos com venda de baterias, acessórios, sensores, sinaleiras, lâmpadas e som.</p>
+            </section>
+
+            <section class="pecas-lista">
+
+                <section class="pecas-box">
+                    <img src="./img/moura.png" alt="">
+                    <section class="pecas-content">
+                        <p class="item">Bateria</p>
+                        <p class="item-desc">Baterias automotivas de longa duração, com alta capacidade de armazenamento e confiabilidade, adequadas para diversos tipos de veículos.</p>
+                    </section>
+                </section>
+                <section class="pecas-box">
+                    <img src="./img/lampada.png" alt="">
+                    <section class="pecas-content">
+                        <p class="item">Lâmpada Automotiva</p>
+                        <p class="item-desc">Lâmpadas de alta qualidade para faróis, lanternas e interiores, garantindo excelente iluminação, maior segurança e visibilidade durante a condução, tanto de dia quanto à noite.</p>
+                    </section>
+                </section>
+                <section class="pecas-box">
+                    <img src="./img/som-de-carro.jpg" alt="">
+                    <section class="pecas-content">
+                        <p class="item">Som Automotivo</p>
+                        <p class="item-desc">Aparelhos e acessórios de alta qualidade para proporcionar uma experiência sonora imersiva no carro, incluindo rádios, amplificadores e alto-falantes.</p>
+                    </section>
+                </section>
+                <section class="pecas-box">
+                    <img src="./img/alarme.png" alt="">
+                    <section class="pecas-content">
+                        <p class="item">Alarme</p>
+                        <p class="item-desc">Sistemas modernos para proteger o seu veículo contra furtos, garantindo segurança e tranquilidade. Disponíveis com diversas funções, como travas automáticas e sensores de presença.</p>
+                    </section>
+                </section>
+
+            </section>
+
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

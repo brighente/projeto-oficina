@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+/* 
+    #201D19 -> Cinza Escuro
+    #FFCC29 -> Amarelo Logo
+    #00AFF0 -> Azul Logo
+ */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+            /* Header */
+
+header{
+    height: 100px;
+    padding: 10px;
+    background-color: #2C2D2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+#header-icone{
+    font-size: 2em;
+    color: white;
+}
+
+#header-img{
+    width: 160px;
+    height: 80px;
+}
+
+#header-menu{
+    display: none;
+}
+
+
+            /* Carrossel */
+
+.carrossel-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #2C2D2E;
+}
+
+.carrossel-slide{
+    display: flex;
+    transition: 0.5s ease;
+}
+
+.carrossel-slide img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slide{
+    min-width: 100%;
+    color: white;
+    position: relative;
+}
+
+.slide h1{
+    font-size: 2em;
+}
+
+.afinar-letra{
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.descricao {
+    text-align: center;
+    font-family: 'Source Code Pro';
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+    width: 370px;
+}
+
+.botao {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.botao-esquerda {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.botao-direita {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+            /* Sobre Nós */
+
+.sobre-container{
+    height: 520px;
+    padding: 30px;
+    background-color: #444444;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.sobre-content{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-content h1{
+    padding-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.sobre-content p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.sobre-content button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #0390c4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.sobre-content button:hover{
+    background-color: transparent;
+    border: 2px solid #0390c4;
+}
+
+            /* Peças */
+
+.pecas-container{
+    background-color: white;
+}
+
+.pecas-intro{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.pecas-intro h2{
+    margin-top: 20px;
+}
+
+.pecas-intro h1{
+    padding-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.pecas-intro p{
+    text-align: center;
+    width: 290px;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.pecas-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.pecas-box {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pecas-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pecas-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.pecas-content{
+    height: 100%;
+    padding: 10px;
+    font-family: 'Roboto';
+    background-color: #2C2D2E;
+    color: white;
+}
+
+.item{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#pecas-imagem{
+    width: 100%;
+}
