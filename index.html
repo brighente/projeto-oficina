@@ -2,47 +2,58 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="João Vitor Silva dos Santos">
+    <meta name="author" content="Auto Elétrica MJ">
     <meta name="description" content="Site de Auto Elétrica, carros, reparos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Elétrica MJ</title>
+    <!-- ICONE -->
+    <link rel="shortcut icon" href="./img/miguel_eletrica_logo_boneco.ico" type="image/x-icon">
+
+    <!-- Link dos Icones -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-
+    <!-- Link CSS -->
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./estilos/media-query.css">
+
+    <!-- JavaScript  -->
     <script src="script/script.js"></script>
 </head>
-<body>
-    <header>
+
+<body id="body" onresize="mudouTamanho()">
+    <header id="header">
         <a href="">
             <img src="./img/miguel_eletrica_logo_completo.png" alt="Logo MJ Auto Elétrica" id="header-img">
         </a>
-        <span class="material-symbols-outlined" id="header-icone">menu</span>
-        <menu id="header-menu">
-            <a href="">Home</a>
-            <a href="">Serviços</a>
-            <a href="">Localização</a>
-            <a href="">Contato</a>
-        </menu>
+        <section class="navigation">
+            <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+            <menu id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#footer">Localização</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+            </menu>
+        </section>
     </header>
     <main>
 
-                                                <!-- CARROSSEL -->
+                                <!-- CARROSSEL -->
 
         <article class="carrossel-container"> 
 
             <section class="carrossel-slide" id="carrossel">
                 <section class="slide">
-                    <img src="./img/248-as-pricipais-manutencoes-no-sistema-eletrico-e-eletronico-do-carro-photoaidcom-darken-photoaidcom-darken.jpg" alt="">
+                    <img src="./img/slide01.jpg" alt="">
                     <h1 class="descricao"><span class="afinar-letra">Qualidade de</span> Manutenção</h1>
                 </section>
                 <section class="slide">
-                    <img src="./img/288-como-fazer-sua-oficina-mecanica-prosperar-photoaidcom-darken-photoaidcom-darken.jpg" alt="">
+                    <img src="./img/slide02.jpg" alt="">
                     <h1 class="descricao"><span class="afinar-letra">Equipe</span> Especializada</h1>
                 </section>
                 <section class="slide"> 
-                    <img src="./img/tradener-setor-mecanico-energia-photoaidcom-darken-photoaidcom-darken.jpg" alt="">
+                    <img src="./img/slide03.jpg" alt="">
                     <h1 class="descricao"><span class="afinar-letra">Diagnóstico</span> Preciso</h1>
                 </section>
 
@@ -57,25 +68,30 @@
 
         </article>
 
+                            <!-- SOBRE -->
+
         <article class="sobre-container">
 
             <section class="sobre-content">
                 <h2 class="afinar-letra subtitulo">Um Pouco</h2>
                 <h1 class="titulo">Sobre Nós</h1>
                 <p>A Auto Elétrica MJ é o local ideal para você que tem algum problema elétrico ou necessidade com o seu automóvel. Estamos a 2 anos no mercado sendo referência na região sul de Santa Catarina, prestando serviços na parte elétrica como reparos e consertos de veículos. Nossos serviços são feitos por profissionais especializados e dispondo de uma estrutura perfeita para melhor lhe atender.</p>
-                <button>Leia Mais</button>
+                <button>Saiba Mais</button>
             </section>
             
         </article>
 
+
+                            <!-- PECAS -->
+
         <article class="pecas-container">
 
             <section class="pecas-intro">
-                <img id="pecas-imagem" src="./img/mecanico-carro.jpg" alt="">
-                <h2 class="afinar-letra subtitulo">Peças Para</h2>
+                <img id="pecas-imagem" src="./img/mecanico-baixo.jpg" alt="">
+                <h2 class="afinar-letra subtitulo">Peças para</h2>
                 <h1 class="titulo">Seu Carro</h1>
                 <p>Com grande variedade de peças de reposição, revendemos e aplicamos as mais bem conceituadas marcas do mercado. Trabalhamos com venda de baterias, acessórios, sensores, sinaleiras, lâmpadas e som.</p>
-            </section>
+            </sectio>
 
             <section class="pecas-lista">
 
@@ -89,7 +105,7 @@
                 <section class="pecas-box">
                     <img src="./img/lampada.png" alt="">
                     <section class="pecas-content">
-                        <p class="item">Lâmpada Automotiva</p>
+                        <p class="item">Lamp. Automotiva</p>
                         <p class="item-desc">Lâmpadas de alta qualidade para faróis, lanternas e interiores, garantindo excelente iluminação, maior segurança e visibilidade durante a condução, tanto de dia quanto à noite.</p>
                     </section>
                 </section>
@@ -112,42 +128,58 @@
 
         </article>
 
-        <article class="servicos-container">
+                            <!-- SERVIÇOS -->
+
+        <article class="servicos-container" id="servicos">
+
             <h2 class="afinar-letra subtitulo">Nossos</h2>
             <h1 class="titulo">Serviços</h1>
 
-            <section class="servicos-box">
-                <span class="material-symbols-outlined">light_mode</span>
-                <h2>Conserto de Faróis e Lanternas</h2>
-                <p>Troca de lâmpadas, ajustes e reparos no sistema de iluminação.</p>
-            </section>
+            <section class="servicos-content">
 
-            <section class="servicos-box">
-                <span class="material-symbols-outlined">lock</span>
-                <h2>Vidros Elétricos e Travas</h2>
-                <p>Reparo ou substituição de motores de vidro e sistemas de trava elétrica.</p>
-            </section>
+                <section class="servicos-box">
+                    <span class="material-symbols-outlined">light_mode</span>
+                    <h2>Conserto de Faróis e Lanternas</h2>
+                    <p>Troca de lâmpadas, ajustes e reparos no sistema de iluminação.</p>
+                </section>
 
-            <section class="servicos-box">
-                <span class="material-symbols-outlined">flash_on</span>
-                <h2>Carregamento de Bateria</h2>
-                <p>Serviço rápido para recarregar baterias descarregadas.</p>
-            </section>
+                <section class="servicos-box">
+                    <span class="material-symbols-outlined">lock</span>
+                    <h2>Vidros Elétricos e Travas</h2>
+                    <p>Reparo ou substituição de motores de vidro e sistemas de trava elétrica.</p>
+                </section>
 
-            <section class="servicos-box">
-                <span class="material-symbols-outlined">car_repair</span>
-                <h2>Reparos no Motor de Partida</h2>
-                <p>Diagnóstico e reparo para resolver problemas de partida do motor.</p>
+                <section class="servicos-box">
+                    <span class="material-symbols-outlined">flash_on</span>
+                    <h2>Carregamento de Bateria</h2>
+                    <p>Serviço rápido para recarregar baterias descarregadas.</p>
+                </section>
+
+                <section class="servicos-box">
+                    <span class="material-symbols-outlined">car_repair</span>
+                    <h2>Reparos no Motor de Partida</h2>
+                    <p>Diagnóstico e reparo para resolver problemas de partida do motor.</p>
+                </section>
+
             </section>
 
             <button>Saiba Mais</button>
 
         </article>
-        <button class="botao-voltar" onclick="voltarTopo()"><span class="material-symbols-outlined">keyboard_arrow_up</span></button>
+
+        <button class="botao-voltar" onclick="voltarTopo()">
+            <span class="material-symbols-outlined">keyboard_arrow_up</span>
+        </button>
+
     </main>
-    <footer>
+
+                        <!-- FOOTER -->
+
+    <footer id="footer">
+
         <h2 class="afinar-letra subtitulo">Fale</h2>
         <h1 class="titulo">Conosco</h1>
+
         <p>
             <span class="material-symbols-outlined">location_on</span>
             <a href="https://maps.app.goo.gl/cSRHmSM7KCw66VkA6" target="_blank">R. Alameda Antônio Alves da Silva, Araranguá - SC</a>
@@ -159,6 +191,7 @@
 
         <p class="copyright">&copy; 2024 Auto Elétrica MJ</p>
         <p class="copyright">Todos os direitos reservados</p>
+        
     </footer>
 </body>
 </html>

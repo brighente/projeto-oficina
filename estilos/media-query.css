@@ -1,8 +1,28 @@
+@charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+            /* Variaveis */
+
+
+:root{
+
+    --cor01: #2C2D2E;
+
+
+    --cor04: #FFCC29;
+
+    --fonte01: 'Roboto';
+    --fonte02: 'Source Code Pro';
+}
 
 @media screen and (min-width:768px){
     .descricao{
         font-size: 3em;
+        width: 450px;
     }
 
     .subtitulo{
@@ -13,6 +33,7 @@
 
     .sobre-content h1{
         font-size: 3em;
+        font-weight: 900;
     }
 
     .sobre-content p{
@@ -28,6 +49,7 @@
 
     .pecas-intro h1{
         font-size: 3em;
+        font-weight: 900;
     }
 
     .pecas-intro p{ 
@@ -45,6 +67,7 @@
 
     .servicos-container h1{
         font-size: 3em;
+        font-weight: 900;
     }
 
     .servicos-container button{
@@ -60,5 +83,194 @@
         width: 400px;
     }
 
-    /*  */
+}
+
+@media screen and (min-width: 1024px){
+
+    .afinar-letra{
+        font-weight: 200;
+    }
+
+    /* HEADER */
+
+    header{
+        padding: 0px 40px;
+    }
+
+    #burguer{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #menu ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    
+    
+    #menu li a{
+        color:var(--cor04);
+        text-decoration: none;
+        font-family: var(--fonte01);
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    #menu a:hover{
+        color: white;
+    }
+
+    /* CARROSSEL */
+
+    .carrossel-slide img{
+        height: calc(100vh - 100px);
+    }
+
+    .descricao{
+        width: 600px;
+        font-size: 4.5em;
+    }
+
+    .subtitulo{
+        font-size: 2.5em;
+    }
+
+    /* SOBRE */
+
+    .sobre-container{
+        padding: 80px 120px 120px 120px;
+    }
+
+    .sobre-content h1{
+        font-size: 3.5em;
+        padding-bottom: 60px;
+        font-weight: 900;
+    }
+
+    .sobre-content p{
+        width: 600px;
+        text-align: justify;
+        letter-spacing: 2px;
+        font-size: 1.5em;
+        padding-bottom: 60px;
+    } 
+
+    .sobre-content button{
+        width: 250px;
+        height: 60px;
+        font-size: 1.3em;
+    }
+
+    /* PEÇAS */
+
+    .pecas-intro h1{
+        font-size: 3.5em;
+        font-weight: 900;
+    }
+
+    .pecas-intro h2{
+        padding-top: 60px;
+    }
+
+    .pecas-intro p{ 
+        width: 600px;
+        font-size: 1.5em;
+        text-align: justify;
+        letter-spacing: 1.5px;
+    }
+
+    .pecas-lista{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        row-gap: 50px;
+        padding: 60px;
+    }
+
+    .pecas-box{
+        width: 300px;
+        height: 500px;
+    }
+
+    .item{
+        font-size: 1.7em;
+    }
+
+    .item-desc{
+        font-size: 1.1em;
+        text-align: justify;
+    }
+
+    .pecas-box p{
+        padding: 10px 15px;
+    }
+
+    .pecas-box img{
+        height: 250px;
+    }
+
+    /* SERVIÇOS */
+
+    .servicos-container{
+        padding: 80px;
+    }
+
+    .servicos-container h1{
+        font-size: 3.5em;
+    }
+
+    .servicos-container button{
+        width: 250px;
+        height: 60px;
+        font-size: 1.3em;
+    }
+
+    .servicos-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px;
+        row-gap: 50px;
+    }
+
+    .servicos-box h2{
+        font-size: 2em;
+    }
+
+    .servicos-box p{
+        font-size: 1.3em;
+        width: 400px;
+    }
+
+    .servicos-container button{
+        margin-top: 60px;
+    }
+
+    /* FOOTER */
+
+    footer h1{
+        font-size: 3.5em;
+    }
+
+    footer p{
+        font-size: 1.2em;
+    }
+
+    /* Botao de Voltar */
+
+
+    .botao-voltar{
+        padding: 15px;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    
+
+
 }
