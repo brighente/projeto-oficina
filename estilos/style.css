@@ -17,12 +17,23 @@
     box-sizing: border-box;
 }
 
+            /* Variaveis */
+
+
+:root{
+    
+    --cor01: #2C2D2E;
+
+    --fonte01: 'Roboto';
+    --fonte02: 'Source Code Pro';
+}
+
             /* Header */
 
 header{
     height: 100px;
     padding: 10px;
-    background-color: #2C2D2E;
+    background-color: var(--cor01);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +64,7 @@ header{
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: #2C2D2E;
+    background-color: var(--cor01);
 }
 
 .carrossel-slide{
@@ -80,11 +91,12 @@ header{
 .afinar-letra{
     letter-spacing: 2px;
     font-weight: 100;
+    font-family: 'Roboto';
 }
 
 .descricao {
     text-align: center;
-    font-family: 'Source Code Pro';
+    font-family: var(--fonte02);
 
     position: absolute;
     top: 50%;
@@ -92,7 +104,7 @@ header{
     transform: translate(-50%, -50%);
     font-size: 18px;
     color: white;
-    width: 370px;
+    width: 320px;
 }
 
 .botao {
@@ -127,7 +139,7 @@ header{
 .sobre-container{
     height: 520px;
     padding: 30px;
-    background-color: #444444;
+    background-color: var(--cor01);
     color: white;
     display: flex;
     justify-content: center;
@@ -149,7 +161,8 @@ header{
 
 .sobre-content p{
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 .sobre-content button{
@@ -173,6 +186,7 @@ header{
 
 .pecas-container{
     background-color: white;
+
 }
 
 .pecas-intro{
@@ -204,7 +218,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 40px;
+
 }
 
 .pecas-box {
@@ -216,6 +230,7 @@ header{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 40px;
 }
 
 .pecas-box:hover {
@@ -234,7 +249,7 @@ header{
     height: 100%;
     padding: 10px;
     font-family: 'Roboto';
-    background-color: #2C2D2E;
+    background-color: var(--cor01);
     color: white;
 }
 
@@ -247,3 +262,73 @@ header{
 #pecas-imagem{
     width: 100%;
 }
+
+.servicos-container{
+    background-color: var(--cor01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.servicos-container > h2 {
+    color: white;
+    font-family: 'Roboto';
+}
+
+.servicos-container > h1{
+    font-size: 2.5em;
+    padding-bottom: 40px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.servicos-container button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #0390c4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.servicos-container button:hover{
+    background-color: transparent;
+    border: 2px solid #0390c4;
+}
+
+.servicos-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    color: white;
+    row-gap: 10px;
+    font-family: 'Roboto';
+}
+
+.servicos-box h2{
+    font-size: 1.5em;
+    text-align: center;
+    color: #0390c4;
+}
+
+.servicos-box p{
+    width: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.servicos-box span{
+    color: #0390c4;
+    font-size: 3.5em;
+    padding: 15px;
+    border: 2px solid #0390c4;
+    border-radius: 50%;
+}
+
