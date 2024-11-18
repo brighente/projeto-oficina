@@ -381,6 +381,13 @@ header{
     cursor: pointer;
 }
 
+        /* Config Geral Buttons */
+
+button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
 
 
             /* Footer */
