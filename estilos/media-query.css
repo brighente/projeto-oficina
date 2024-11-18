@@ -1,11 +1,64 @@
 
 
 @media screen and (min-width:768px){
-    .carrossel-container{
-        height: 100vh;
+    .descricao{
+        font-size: 3em;
     }
-    .carrossel-slide img{
-        width: auto;
-        height: auto;
+
+    .subtitulo{
+        font-size: 2em;
     }
+
+    /* SOBRE */
+
+    .sobre-content h1{
+        font-size: 3em;
+    }
+
+    .sobre-content p{
+        width: 400px;
+        font-size: 1.3em;
+    } 
+
+    .sobre-content button{
+        width: 200px;
+    }
+
+    /* PEÇAS */
+
+    .pecas-intro h1{
+        font-size: 3em;
+    }
+
+    .pecas-intro p{ 
+        width: 400px;
+        font-size: 1.3em;
+    }
+
+    .pecas-lista{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    /* SERVIÇOS */
+
+    .servicos-container h1{
+        font-size: 3em;
+    }
+
+    .servicos-container button{
+        width: 200px;
+    }
+
+    .servicos-box h2{
+        font-size: 2em;
+    }
+
+    .servicos-box p{
+        font-size: 1.3em;
+        width: 400px;
+    }
+
+    /*  */
 }
