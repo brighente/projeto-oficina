@@ -7,7 +7,6 @@ let bodycheck = document.getElementById('body')
         const slides = document.querySelectorAll('.carrossel-slide .slide');
         const totalSlides = slides.length;
 
-        // Calculando o novo índice
         indiceAtual += direcao;
 
         if (indiceAtual < 0) {
