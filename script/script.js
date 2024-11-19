@@ -30,7 +30,6 @@ let bodycheck = document.getElementById('body')
 
             // MENU HAMBURGER VERIFICAÇÃO
 
-    body.onresize = mudouTamanho;
 
     function mudouTamanho(){
         if(window.innerWidth >= 1024){
@@ -39,11 +38,6 @@ let bodycheck = document.getElementById('body')
             menu.style.display = 'none'
         }
     }
-
-
-        
-    
-
 
     function clickMenu(){
         if(menu.style.display == 'block'){
