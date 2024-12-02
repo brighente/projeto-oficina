@@ -15,39 +15,13 @@ let bodycheck = document.getElementById('body')
             indiceAtual = 0; // Vai para o primeiro slide
         }
 
+
+        
         // Movendo o carrossel
         const carrossel = document.getElementById('carrossel');
         carrossel.style.transform = `translateX(-${indiceAtual * 100}%)`;
     }
 
-
-            // BOTAO VOLTAR AO TOPO
-
-    function voltarTopo() {
-        window.scroll(0, 0);
-        }
-
-
-            // MENU HAMBURGER VERIFICAÇÃO
-
-
-    function mudouTamanho(){
-        if(window.innerWidth >= 1024){
-            menu.style.display = 'flex';
-        } else {
-            menu.style.display = 'none'
-        }
-    }
-
-    function clickMenu(){
-        if(menu.style.display == 'block'){
-            menu.style.display = 'none'
-            header.style.display = 'flex'
-        } else {
-            menu.style.display = 'block'
-            header.style.display = 'grid'
-        }
-    }
 
 
         

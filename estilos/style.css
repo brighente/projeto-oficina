@@ -117,7 +117,7 @@ header{
 }
 
 
-.afinar-letra{
+.afinar-letra {
     letter-spacing: 2px;
     font-weight: 100;
 }
@@ -155,6 +155,7 @@ header{
     left: 10px;
     transform: translateY(-50%);
 }
+
 
 .botao-direita {
     right: 10px;
